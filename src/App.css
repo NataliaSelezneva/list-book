@@ -1,38 +1,110 @@
+body{
+  font-family: 'Ubuntu', sans-serif;
+  background: rgba(58, 180, 174, 0.5);
+  background: linear-gradient(180deg, rgb(138, 207, 190) 0%, rgb(79, 128, 158) 20%, rgb(91, 96, 252) 50%, rgba(69,251,252,1) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.header{
+  color: azure;
+  font-weight: bolder;
+}
+.nameBook{
+  color: azure;
+  font-weight: bolder;
+}
+.styleImage{
+  border-radius: 10px;
+}
+.styleButtonRemote{
+  background-color: rgba(20, 89, 85, 0.5);
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  color: bisque;
+  font-size: 10px;
+  font-family: 'Ubuntu', sans-serif;
+}
+.styleButtonDeleteAll{
+  background-color: rgba(7, 47, 45, 0.5);
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  color: bisque;
+  margin: 10px;
+  font-family: 'Ubuntu', sans-serif;
+}
+.styleBlockAnnotation{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgba(7, 47, 45, 0.5);
+  padding: 20px;
+  color: azure;
+  border-radius: 10px;
+  margin-bottom: 100px;
+  font-family: 'Ubuntu', sans-serif;
+}
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.styleButtonAnnotation{
+  font-size: 10px;
+  border-radius: 10px;
+  background-color: rgba(7, 47, 45, 0.1);
+  border: none;
+  padding: 10px;
+  color: azure;
+  margin: 10px;
+  font-family: 'Ubuntu', sans-serif;
+}
+.styleButtonNextAndPrevious{
+  padding: 15px;
+  width: 25%;
+  border-radius: 10px;
+  border: none;
+  margin: 10px;
+  font-size: 15px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bolder;
+  color: rgb(5, 5, 53);
+}
+h3{
+  font-size: 25px;
+}
+.styleText{
+  font-size: 12px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media all and (max-width:500px) {
+  .styleBlockAnnotation{
+    margin-left: 10px;
+    width: 350px;
+  }
+  .styleButtonNextAndPrevious{
+    width: 40%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media all and (max-width:400px) {
+  .styleBlockAnnotation{
+    margin-left: 10px;
+    width: 300px;
   }
-  to {
-    transform: rotate(360deg);
+  .styleButtonNextAndPrevious{
+    width: 40%;
   }
 }
+@media all and (max-width:300px) {
+  .styleBlockAnnotation{
+    margin-left: 10px;
+    width: 210px;
+  }
+  .styleButtonNextAndPrevious{
+    width: 50%;
+  }
+}
+
+
+
